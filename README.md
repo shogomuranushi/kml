@@ -34,7 +34,7 @@ gcloud container node-pools create gpu-k80-1 --cluster $clusterName --zone $zone
         --num-nodes 0 --enable-autoscaling --min-nodes=0 --max-nodes=1
         --node-labels=node=gpu-k80-1
 
-kubectl apply -f https://raw.githubusercontent.com/GoogleCloudPlatform/container-engine-accelerators/stable/nvidia-driver-installer/cos/daemonset-preloaded.yaml
+kubectl apply -f daemonset-preloaded.yaml
 
 # Delete clustor
 # gcloud container clusters delete  $clusterName
