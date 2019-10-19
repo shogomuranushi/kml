@@ -16,9 +16,10 @@ gcloud components update kubectl
 ```:bash
 #Set CLUSTER_NAM and NODE_POOL
 clusterName="default"
-k zone="us-central1-c"
+zone="us-central1-c"
 
 # Create clustor and nodes
+# don't custom this
 gcloud container clusters create $clusterName --zone $zone --machine-type=g1-small --num-nodes 2 --disk-size 10 --preemptible
 
 # Create other node-pooks
@@ -39,6 +40,10 @@ kubectl apply -f daemonset-preloaded.yaml
 # Delete clustor
 # gcloud container clusters delete  $clusterName
 ```
+
+if you want custom to node
+- [Jupyter Node](if_you_want_jupyter_node_custom.md)
+- [GPU Node](if_you_want_gpu_node_custom.md)
 
 ## Next
 
