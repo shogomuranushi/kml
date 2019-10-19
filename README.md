@@ -41,9 +41,14 @@ kubectl apply -f daemonset-preloaded.yaml
 # gcloud container clusters delete  $clusterName
 ```
 
-if you want custom to node
-- [Jupyter Node](if_you_want_jupyter_node_custom.md)
-- [GPU Node](if_you_want_gpu_node_custom.md)
+When you want to change the Jupyter node or the GPU node
+
+- [Jupyter Node](documents/custom_jupyter_node.md)
+- [GPU Node](documents/custom_gpu_node.md)
+
+When you want to show cluster and node
+
+- [show commands](documents/show_clusters_node-pools.md)
 
 ## Next
 
